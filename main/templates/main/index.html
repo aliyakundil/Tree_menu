@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+{% load tree_menu %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{% static 'css/menu.css' %}">
+
+    {% load tree_menu %}
+</head>
+<body style="background-color: aliceblue">
+
+<nav>
+  <ul class="topmenu">
+      <li>{% draw_menu 'Смартфоны' %}</li>
+    <li><a>{% draw_menu 'Ноутбуки' %}</a></li>
+    <li><a href="">Блог</a></li>
+    <li><a href="">Контакты</a></li>
+
+  </ul>
+</nav>
+
+</body>
+</html>
